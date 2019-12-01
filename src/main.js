@@ -11,14 +11,6 @@ const actionsMap = {
         alias: 'cr',
         examples: ['scm-cli create <template-name>'],
     },
-    config: { // 配置文件
-        description: 'config info',
-        alias: 'c',
-        examples: [
-            'scm-cli config <k>',
-            'scm-cli config set <k> <v>',
-        ],
-    },
     '*': {
         description: 'command not found',
     }
