@@ -33,7 +33,7 @@ const download = async (repo, tag) => {
 module.exports = async (projectName) => {
 
     // 下载项目,返回目录
-    const target = await wrapFetchAddLoading(download, 'download template')('scm-admin', 'v0.1');
+    const target = await wrapFetchAddLoading(download, 'download template')('scm-admin', 'v0.2.0');
 
     // 将下载的文件拷贝到当前执行命令的目录下
     await ncp(target, path.join(path.resolve(), projectName));
